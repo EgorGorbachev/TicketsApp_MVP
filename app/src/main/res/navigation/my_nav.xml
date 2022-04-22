@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/discoverFragment">
+    <fragment
+        android:id="@+id/discoverFragment"
+        android:name="com.example.yourticketsapp.ui.discover_fragment.DiscoverFragment"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_discover" >
+        <action
+            android:id="@+id/action_discoverFragment_to_ticketsFragment2"
+            app:destination="@id/ticketsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <action
+            android:id="@+id/action_discoverFragment_to_popularPerfDetailsFragment"
+            app:destination="@id/popularPerfDetailsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/ticketsFragment"
+        android:name="com.example.yourticketsapp.ui.tickets_fragment.TicketsFragment"
+        android:label="fragment_tickets"
+        tools:layout="@layout/fragment_tickets" >
+        <action
+            android:id="@+id/action_ticketsFragment2_to_accountFragment2"
+            app:destination="@id/accountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.yourticketsapp.ui.account_fragment.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/popularPerfDetailsFragment"
+        android:name="com.example.yourticketsapp.ui.popular_perf_details_fragment.PopularPerfDetailsFragment"
+        android:label="fragment_popular_perf_details"
+        tools:layout="@layout/fragment_popular_perf_details" >
+        <action
+            android:id="@+id/action_popularPerfDetailsFragment_to_discoverFragment"
+            app:destination="@id/discoverFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"/>
+        <argument
+            android:name="popularDetailsInfo"
+            app:argType="com.example.yourticketsapp.data.models.PopularPerformanceModel" />
+
+    </fragment>
+</navigation>

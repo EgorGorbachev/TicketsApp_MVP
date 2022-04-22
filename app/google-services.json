@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "198907353883",
+    "project_id": "yourticketsapp-f29bd",
+    "storage_bucket": "yourticketsapp-f29bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198907353883:android:79f00f70ee8bbd85ee91be",
+        "android_client_info": {
+          "package_name": "com.example.yourticketsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198907353883-588pv4v5qf8sqpl1kpq9vmqgp354lgm8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yourticketsapp",
+            "certificate_hash": "38e2c57e552c96d37f31037d88bf05784cd3e603"
+          }
+        },
+        {
+          "client_id": "198907353883-pha9hfssl1re2it7vr5963dohguqa8go.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb0WnJ24bckbn_X84IHiAqx_-QAAWfFk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198907353883-pha9hfssl1re2it7vr5963dohguqa8go.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
